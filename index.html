@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="pwgen.css">
+    </head>
+
+    <body>
+        <h1>Random Password Generator</h1>
+
+        <textarea name="" id="password" cols="60" rows="10"
+            readonly
+            placeholder="Your Secure, Random Password"
+            aria-label="Generated Password"
+        ></textarea>
+
+        <p>Choose the types of characters you want in your password:</p>
+
+        <input type="checkbox" id="lowercase" onclick="">
+        <label for="lowercase">Lowercase letters</label>
+        <p id="lctext" style="display: none">Lowercase is Checked</p>
+
+        <input type="checkbox" id="uppercase" onclick="">
+        <label for="uppercase">UPPERCASE letters</label>
+        <p id="uctext" style="display: none">UPPERCASE is Checked</p>
+
+        <input type="checkbox" id="numbers" onclick="">
+        <label for="numbers">Numbers</label>
+        <p id="numtext" style="display: none">Numbers is Checked</p>
+
+        <input type="checkbox" id="spechar" onclick="">
+        <label for="spechar">Special characters (e.g. @, &, >, etc)</label>
+        <p id="lctext" style="display: none">Special Characters is Checked</p>
+
+        <br />
+
+        <button id="Generatepw" class="btn">Generate Password</button>
+
+
+        <script src="pwgen.js"></script>
+    </body>
+</html>
