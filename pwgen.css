@@ -1,0 +1,33 @@
+h2 {
+    line-height: 0.1;
+}
+
+div.passwordContainer, div.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#password {
+    width: 50%;
+    align-self: center;
+
+}
+
+div.button, div.options {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: black;
+    color: red;
+
+}
