@@ -1,9 +1,10 @@
-/* Changed background color to black (below the jumbotron only) */
+/* Changes background color to black (below the jumbotron only) and all text to white. */
 body {
     background-color: black;
+    color: white;
 }
 
-/* Changed the size of the font for the heads in the options section. */
+/* Changes the size of the font for the heads in the options section. */
 h2 {
     font-size: 2em;
 }
@@ -11,22 +12,18 @@ h2 {
 /* Centers the text that will be the password when generated. */
 textarea {
     text-align: center;
+    color: black;
 }
 
-/* Changes the bacground color of the top section (the Jumbotron) with the box for the password. */
-div.passwordContainer {
-    background-color: rgb(204, 192, 192);
-}
-
-/* Changes the color of the text in the lower portion (witht he black background) to white. */
-div.optionsContainer {
-    color: white;
+/* Adds background image to  */
+.jumbotron {
+    background-image: url("cyber-security-DARKRED.jpg");
+    background-size: cover;
 }
 
 /* Adds outline to the Generate Password button */
 button.btn {
     outline: black auto 2px;
-
 }
 
 /* Adds padding to the Font Awesome icons on the button to give space between them and the button text */
