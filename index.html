@@ -8,35 +8,60 @@
     </head>
 
     <body>
-        <h1>Random Password Generator</h1>
+        <div>
+            <div class="passwordContainer">
+                <h1>Random Password Generator</h1>
+                <!-- This is where the password will be displayed -->
+                <textarea name="" id="password" cols="60" rows="10"
+                readonly
+                placeholder="Your Secure, Random Password"
+                aria-label="Generated Password"
+            ></textarea>
+            </div>
 
-        <textarea name="" id="password" cols="60" rows="10"
-            readonly
-            placeholder="Your Secure, Random Password"
-            aria-label="Generated Password"
-        ></textarea>
 
-        <p>Choose the types of characters you want in your password:</p>
+            <br>
 
-        <input type="checkbox" id="lowercase" onclick="">
-        <label for="lowercase">Lowercase letters</label>
-        <p id="lctext" style="display: none">Lowercase is Checked</p>
+            <div class="instructions">
+                <label for="numChar">
+                    <h2>Number of Characters</h2>
+                    <p>(Must be at least 8 and no more than 128.)</p>
+                </label>
+                <input type="text" id="numChar">
+                <p>Choose the types of characters you want in your password:</p>
 
-        <input type="checkbox" id="uppercase" onclick="">
-        <label for="uppercase">UPPERCASE letters</label>
-        <p id="uctext" style="display: none">UPPERCASE is Checked</p>
+            </div>
 
-        <input type="checkbox" id="numbers" onclick="">
-        <label for="numbers">Numbers</label>
-        <p id="numtext" style="display: none">Numbers is Checked</p>
 
-        <input type="checkbox" id="spechar" onclick="">
-        <label for="spechar">Special characters (e.g. @, &, >, etc)</label>
-        <p id="lctext" style="display: none">Special Characters is Checked</p>
+            <div class="row options">
+                    <div class="col-3">
+                        <input type="checkbox" class="toclick" id="lowercase" onclick="">
+                        <label for="lowercase">Lowercase letters</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="checkbox" class="toclick" id="uppercase" onclick="">
+                        <label for="uppercase">UPPERCASE letters</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="checkbox" class="toclick" id="numbers" onclick="">
+                        <label for="numbers">Numbers</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="checkbox" class="toclick" id="spechar" onclick="">
+                        <label for="spechar">Special characters (e.g. @, &, >, etc)</label>
+                    </div>
+            </div>
 
-        <br />
 
-        <button id="Generatepw" class="btn">Generate Password</button>
+            <br />
+
+            <div class="button">
+                <button id="generatepw" class="btn">Generate Password</button>
+            </div>
+        </div>
+
+
+
 
 
         <script src="pwgen.js"></script>
